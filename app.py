@@ -15,10 +15,8 @@ st.set_page_config(
 )
 
 # --- API KEY SETUP ---
-# (Ideally, put this in .streamlit/secrets.toml for production)
-# For now, we keep it here for your local test.
 if "GOOGLE_API_KEY" not in os.environ:
-    os.environ["GOOGLE_API_KEY"] = "..."  # <--- PASTE YOUR KEY HERE
+    os.environ["GOOGLE_API_KEY"] = "AIzaSyBGdlExfsWZciDHCiQfYzq8Qn8ZqxasCQI"  # <--- PASTE YOUR KEY HERE
 
 # --- LOAD DATABASE (Cached for speed) ---
 @st.cache_resource
